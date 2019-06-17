@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<!-- 首页轮播图 start -->
+<view>
+ <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+          <swiper-item>
+            <!-- <view class="swiper-item {{item}}"></view> -->
+             <image src="{{item}}" style='width:100%;' mode="aspectFill"  />
+          </swiper-item>
+        </block>
+      </swiper>
+</view>
+<!-- 轮播图结束 end -->
+
+<!-- content start -->
+<view style='margin-top:20px'>
+  <text class='centertext'>毛小球MR11篇</text>
+  <image src="../../images/MR11.jpg" style='width:100%;' mode="widthFix"  />
+</view>
+<view style='margin-top:20px'>
+  <text class='centertext'>毛小球MR12篇</text>
+  <image src="../../images/content.jpg" style='width:100%;' mode="widthFix"  />
+  <image src="../../images/MR12.jpg" style='width:100%;' mode="widthFix"  />
+  <text class='centertext'>-- END --</text>
+</view>
+
+<!-- content end -->
+
+<!-- <view class="container">
+  
+</view> -->
